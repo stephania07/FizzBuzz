@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        var fizzbuzz = function (i) {
+            output = "";
+            if (i % 3 === 0) {
+                output += "Fizz"
+            }
+            if (i % 5 === 0) {
+                output += "Buzz"
+            }
+            if (!output) {
+                output += i
+            }
+            return output;
+        }
+        var fizzbuzz1 = function (i)
+        {
+            if (i % 15 === 0)
+            {
+                return "FizzBuzz";
+            }
+            else if ( i % 3 === 0)
+            {
+                return "Fizz";
+            }
+            else if (i % 5 === 0) {
+                return "Buzz";
+            }
+            else
+            {
+                return i;
+            }
+        }
+        var fizzbuzz = function () {
+            var ul = document.getElementById("FizzBuzz");
+            for (var i = 1; i <= 100; i++) {
+                li = document.createElement("li");
+                li.textContent = i;
+                ul.appendChild(li);
+            }
+        }
+        document.addEventListener("DOMContentLoaded", fizzbuzz);
+    </script>
+</head>
+<body>
+    <ul id="FizzBuzz">
+
+    </ul>
+
+
+</body>
+</html>
